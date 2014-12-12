@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<link href = "main.css" rel = "stylesheet" type = "text/css"/>
+	<script src="jquery-1.11.1.js"></script>
+	<script src="script.js"></script>		
+	<title>GuessWho?</title>
+</head>
+
+
+<body>
+
+<div id="container">
+
+	<div id="gameBoard">
+		<table>
+			<thead><th>GuessWho?</th></thead>
+		
+		<!-- row 1 of 3 -->
+			<tr>
+				<td class="piece"><img class="hairY sexM eyesG glassesY hatY" src="1 - YMGYY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesG glassesY hatN" src="26 - BMGYN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesC glassesN hatY" src="11 - YMCNY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesB glassesN hatY" src="31 - BMBNY.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesB glassesY hatN" src="6 - YMBYN.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesN hatN" src="36 - BMCNN.jpg"/></td>
+			</tr>
+		
+		<!-- row 2 of 3 -->	
+			<tr>
+				<td class="piece"><img class="hairY sexF eyesG glassesN hatY" src="15 - YFGNY.jpg"/></td>
+				<td class="piece"><img class="hairY sexF eyesB glassesN hatN" src="20 - YFBNN.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesY hatY" src="33 - BMCYY.jpg"/></td>
+				<td class="piece"><img class="hairY sexF eyesC glassesN hatY" src="23 - YFCNY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesY hatN" src="34 - BMCYN.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesN hatY" src="35 - BMCNY.jpg"/></td>
+			</tr>
+			
+		<!-- row 3 of 3 -->	
+			<tr>
+				<td class="piece"><img class="hairB sexM eyesB glassesY hatN" src="30 - BMBYN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesC glassesY hatY" src="9 - YMCYY.jpg"/></td>
+				<td class="piece"><img class="hairY sexF eyesC glassesY hatY" src="21 - YFCYY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesG glassesN hatN" src="28 - BMGNN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesG glassesN hatN" src="4 - YMGNN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesB glassesN hatN" src="8 - YMBNN.jpg"/></td>
+			</tr>
+
+		</table>
+
+	</div><!-- end div gameBoard -->
+
+
+	<div id="buttons">
+		<p id="buttonHowTo" align="center">Please select an attribute and then click CONTINUE... or guess a name and hit SUBMIT NAME</p>
+		<button id="zero" class="attributes"><p>Red Hair</p></button>	
+		<button id="one" class="attributes"><p>Blonde Hair</p></button>
+		<button id="two" class="attributes"><p>Brown Hair</p></button>
+		<button id="three" class="attributes"><p>Male</p></button>
+		<button id="four" class="attributes"><p>Female</p></button>
+		<button id="five" class="attributes"><p>Green Eyes</p></button>
+		<button id="six" class="attributes"><p>Brown Eyes</p></button>
+		<button id="seven" class="attributes"><p>Blue Eyes</p></button>
+		<button id="eight" class="attributes"><p>Glasses</p></button>
+		<button id="nine" class="attributes"><p>No Glasses</p></button>
+		<button id="ten" class="attributes"><p>Hat</p></button>
+		<button id="eleven" class="attributes"><p>No Hat</p></button>
+		<button id="continue" class="submitButtons"><p>CONTINUE...</p></button>
+	</div><!--end div buttons-->
+
+
+	<div id="guessName">
+		<form name="username" action="javascript:setName()">
+		<input id="nameField" type="text" name="input">
+		<button id="submitName" class="submitButtons"><p>SUBMIT NAME</p></button>
+		</form>
+	</div><!--end div guessName-->
+
+	<div id="questionField">
+		<p align="center" style="font-weight:bold">Computer, does your character have/is your character a...</p><br>
+
+	</div><!-- end div questionField -->
+
+
+	<div id="player">
+		<img src="QuestionMark.jpg"/><br>
+		<button id="draw" class="submitButtons"><p>Draw Card</p></button>
+	</div><!--end div player-->
+
+
+</div><!--end div container-->
+
+
+</body>
+</html>

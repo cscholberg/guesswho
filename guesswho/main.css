@@ -1,0 +1,69 @@
+
+
+
+body {
+	background-color: white;
+}
+
+#container {
+	position:relative;
+	margin: 0px auto;
+	width: 960px;
+}
+
+
+#buttons {
+	width: 975px;
+	margin: 0px 0px 12px 20px;
+}
+
+.piece {
+	border: 2px solid black;
+}
+
+.attributes {
+	background-color: blue;
+	color: white;
+}
+
+.attributes:hover {
+	background-color: red;
+}
+
+#guessName {
+	margin: 12px 260px 20px 400px;
+}
+
+#player {
+	margin: 12px 260px 20px 400px;
+}
+
+#draw {
+	margin: 12px 0px 20px 50px;
+}
+
+.submitButtons {
+	background-color: yellow;
+	color: black;
+	font-weight: bold;
+}
+
+.submitButtons:hover {
+	background-color: green;
+	color: white;
+}
+
+#buttonHowTo {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+th {
+	font-size: 34px;
+	margin-left: 300px;
+}
+
+.back {
+	margin: 4px 2px 2px 2px;
+}
